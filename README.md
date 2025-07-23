@@ -16,7 +16,7 @@ ___REFERRAL LINK___
 ___Update System Packages and Install SCRIPT___
 
 ```
-apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/januda-ui/DRAGON-VPS-MANAGER/main/hehe; chmod 777 hehe;./hehe
+apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/mkkelati/cmk/main/hehe; chmod 777 hehe; ./hehe
 
 ```
 
@@ -81,7 +81,7 @@ ___Based on___
  
 ___Credits___
 
-<p>see on <a href="https://github.com/januda-ui/DRAGON-VPS-MANAGER/wiki/Credits" target="_blank" rel="noopener">wiki</a></p>
+<p>see on <a href="https://github.com/mkkelati/cmk/wiki/Credits" target="_blank" rel="noopener">wiki</a></p>
 <p>see on <a href="https://telegra.ph/DRAGON-VPS-MANAGER-11-30" target="_blank" rel="noopener">Telegra.ph</a>&nbsp;</p>
   <P><b><i> 💐💐 To everyone who gave me advice and ideas.💐💐 </i></b></p>
 
