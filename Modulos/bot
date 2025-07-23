@@ -96,7 +96,7 @@ fun_ajuda() {
             --text "$(echo -e $env_msg)" \
             --parse_mode html
 	ShellBot.sendMessage --chat_id $id_chatuser \
-            --text "$(echo -e ✅ All Tutorials , Updates : @DRAGON_VPS_MANAGER)"
+            --text "$(echo -e ✅ All Tutorials , Updates : @MK_VPN_BOT_MANAGER)"
         return 0
     elif [[ -d /etc/bot/suspensos/$id_name ]]; then
         ShellBot.sendMessage --chat_id $id_chatuser \
@@ -130,7 +130,7 @@ fun_ajuda() {
             --text "$(echo -e $env_msg)" \
             --parse_mode html
 	ShellBot.sendMessage --chat_id $id_chatuser \
-            --text "$(echo -e ✅ All Tutorials , Updates : @DRAGON_VPS_MANAGER)"
+            --text "$(echo -e ✅ All Tutorials , Updates : @MK_VPN_BOT_MANAGER)"
         return 0
     elif [[ "$(grep -w "$id_name" $ativos | awk '{print $NF}')" == 'subrevenda' ]]; then
         local env_msg
@@ -156,7 +156,7 @@ fun_ajuda() {
             --text "$(echo -e $env_msg)" \
             --parse_mode html
 	ShellBot.sendMessage --chat_id $id_chatuser \
-            --text "✅ All Tutorials , Updates : @DRAGON_VPS_MANAGER"
+            --text "✅ All Tutorials , Updates : @MK_VPN_BOT_MANAGER"
         return 0
     else
         ShellBot.sendMessage --chat_id $id_chatuser \
@@ -888,10 +888,10 @@ backup_users() {
 sobremim() {
     local msg
     msg="◈──────────────────◈\n"
-    msg+="<b>��MK VPN BOT MANAGER🐉</b>\n"
+    msg+="<b>MK VPN BOT MANAGER🐉</b>\n"
     msg+="◈──────────────────◈\n\n"
-    msg+="<b>Developed by:</b> @Dragon_vps_manager\n"
-    msg+="<b>Official channel:</b> @Dragon_vps_manager\n\n"
+    msg+="<b>Developed by:</b> @MK_VPN_BOT_MANAGER\n"
+    msg+="<b>Official channel:</b> @MK_VPN_BOT_MANAGER\n\n"
     msg+="I was created with the purpose of providing information and tools for VPN management on 🐧 GNU/Linux 🐧 servers.\n\n"
     msg+="<b>Menu:</b> /menu\n"
     ShellBot.sendMessage --chat_id ${message_chat_id[$id]} \
@@ -1264,7 +1264,7 @@ msg_bem_vindo() {
     msg="👋 Hello ${message_from_first_name[$id]} ! \n\n🤝 Welcome to\n"
     msg+="<b>====================================</b>\n<b>               🐉MK VPN BOT MANAGER🐉   </b>\n<b>====================================</b>\n\n"
     msg+="<b>To access the menu</b>\n<b>click [ /menu ]</b>\n\n"
-    msg+="<b>For information</b>\n<b>click [ /help ]</b>\n\n ✅ All Tutorials , Updates : @DRAGON_VPS_MANAGER"
+    msg+="<b>For information</b>\n<b>click [ /help ]</b>\n\n ✅ All Tutorials , Updates : @MK_VPN_BOT_MANAGER"
     ShellBot.sendMessage --chat_id ${message_chat_id[$id]} \
         --text "$(echo -e $msg)" \
         --parse_mode html
@@ -1359,7 +1359,7 @@ fun_del_rev() {
     }
     [[ "${callback_query_from_id[$id]}" == "$id_admin" ]] || [[ "$(grep -wc ${callback_query_from_username} $ativos)" != '0' ]] && {
         ShellBot.sendMessage --chat_id ${callback_query_message_chat_id[$id]} \
-            --text "🗑 REMOVE DEALER 🗑\n\nInform his username [Ex: @Dragon_vps_manager]:" \
+            --text "🗑 REMOVE DEALER 🗑\n\nInform his username [Ex: @MK_VPN_BOT_MANAGER]:" \
             --reply_markup "$(ShellBot.ForceReply)"
     } || {
         ShellBot.answerCallbackQuery --callback_query_id ${callback_query_id[$id]} \
@@ -1477,7 +1477,7 @@ fun_lim_rev() {
     }
     [[ "${callback_query_from_id[$id]}" == "$id_admin" ]] || [[ "$(grep -wc ${callback_query_from_username} $ativos)" != '0' ]] && {
         ShellBot.sendMessage --chat_id ${callback_query_message_chat_id[$id]} \
-            --text "♾ CHANGE RESALE LIMIT ♾\n\nInform his username [Ex: @Dragon_vps_manager]:" \
+            --text "♾ CHANGE RESALE LIMIT ♾\n\nInform his username [Ex: @MK_VPN_BOT_MANAGER]:" \
             --reply_markup "$(ShellBot.ForceReply)"
     } || {
         ShellBot.answerCallbackQuery --callback_query_id ${callback_query_id[$id]} \
@@ -1523,7 +1523,7 @@ fun_dat_rev() {
     }
     [[ "${callback_query_from_id[$id]}" == "$id_admin" ]] || [[ "$(grep -wc ${callback_query_from_username} $ativos)" != '0' ]] && {
         ShellBot.sendMessage --chat_id ${callback_query_message_chat_id[$id]} \
-            --text "📆 CHANGE RESALE DATE 📆\n\nInform his username [Ex: @Dragon_vps_manager]:" \
+            --text "📆 CHANGE RESALE DATE 📆\n\nInform his username [Ex: @MK_VPN_BOT_MANAGER]:" \
             --reply_markup "$(ShellBot.ForceReply)"
     } || {
         ShellBot.answerCallbackQuery --callback_query_id ${callback_query_id[$id]} \
@@ -1635,7 +1635,7 @@ fun_susp_rev() {
     }
     [[ "${callback_query_from_id[$id]}" == "$id_admin" ]] || [[ "$(grep -wc ${callback_query_from_username} $ativos)" != '0' ]] && {
         ShellBot.sendMessage --chat_id ${callback_query_message_chat_id[$id]} \
-            --text "🔒 SUSPEND DEALER 🔒\n\nInform his username [Ex: @Dragon_vps_manager]:" \
+            --text "🔒 SUSPEND DEALER 🔒\n\nInform his username [Ex: @MK_VPN_BOT_MANAGER]:" \
             --reply_markup "$(ShellBot.ForceReply)"
     } || {
         ShellBot.answerCallbackQuery --callback_query_id ${callback_query_id[$id]} \
@@ -2287,16 +2287,16 @@ while :; do
                     [[ "$_erro" == '1' ]] && break
                     echo "Nome: ${message_text[$id]}" >$CAD_ARQ
                     ShellBot.sendMessage --chat_id ${message_from_id[$id]} \
-                        --text 'Inform his username [Ex: @Dragon_vps_manager]:' \
+                        --text 'Inform his username [Ex: @MK_VPN_BOT_MANAGER]:' \
                         --reply_markup "$(ShellBot.ForceReply)"
                     ;;
-                'Inform his username [Ex: @Dragon_vps_manager]:')
+                'Inform his username [Ex: @MK_VPN_BOT_MANAGER]:')
                     verifica_acesso
                     [[ "$_erro" == '1' ]] && break
                     _VAR1=$(echo -e ${message_text[$id]} | awk -F '@' {'print $2'})
                     [[ -z $_VAR1 ]] && {
                         ShellBot.sendMessage --chat_id ${message_chat_id[$id]} \
-                            --text "$(echo -e "❌ Error \n\n⚠️ inform the username [EX: @Dragon_vps_manager]")" \
+                            --text "$(echo -e "❌ Error \n\n⚠️ inform the username [EX: @MK_VPN_BOT_MANAGER]")" \
                             --parse_mode html
                         break
                     }
@@ -2348,7 +2348,7 @@ while :; do
                         --parse_mode html
                     ;;
                     # REMOVE REVENDEDOR
-                '🗑 REMOVE DEALER 🗑\n\nInform his username [Ex: @Dragon_vps_manager]:')
+                '🗑 REMOVE DEALER 🗑\n\nInform his username [Ex: @MK_VPN_BOT_MANAGER]:')
                     echo -e "${message_text[$id]}" >$CAD_ARQ
                     _Var=$(sed -n '1 p' $CAD_ARQ | awk -F '@' {'print $2'})
                     [[ -z $_Var ]] && {
@@ -2361,7 +2361,7 @@ while :; do
                     break
                     ;;
                     # ALTERAR LIMITE
-                '♾ CHANGE RESALE LIMIT ♾\n\nInform his username [Ex: @Dragon_vps_manager]:')
+                '♾ CHANGE RESALE LIMIT ♾\n\nInform his username [Ex: @MK_VPN_BOT_MANAGER]:')
                     verifica_acesso
                     [[ "$_erro" == '1' ]] && break
                     echo -e "Dealer: ${message_text[$id]}" >$CAD_ARQ
@@ -2438,7 +2438,7 @@ while :; do
                         --parse_mode html
                     # ALTERAR DATA
                     ;;
-                '📆 CHANGE RESALE DATE 📆\n\nInform his username [Ex: @Dragon_vps_manager]:')
+                '📆 CHANGE RESALE DATE 📆\n\nInform his username [Ex: @MK_VPN_BOT_MANAGER]:')
                     verifica_acesso
                     [[ "$_erro" == '1' ]] && break
                     _VAR1=$(echo -e ${message_text[$id]} | awk -F '@' {'print $2'})
@@ -2493,7 +2493,7 @@ while :; do
                         --parse_mode html
                     ;;
                     # SUSPENDER REVENDEDOR
-                '🔒 SUSPEND DEALER 🔒\n\nInform his username [Ex: @Dragon_vps_manager]:')
+                '🔒 SUSPEND DEALER 🔒\n\nInform his username [Ex: @MK_VPN_BOT_MANAGER]:')
                     _VAR1=$(echo -e ${message_text[$id]} | awk -F '@' {'print $2'})
                     [[ -z $_VAR1 ]] && {
                         ShellBot.sendMessage --chat_id ${message_chat_id[$id]} \
