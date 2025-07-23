@@ -70,7 +70,7 @@ fun_atts () {
 
 } > /dev/null 2>&1
 
-echo -e "ㅤ🐉ㅤDRAGON VPS MANAGERㅤ🐉ㅤ" | figlet
+echo -e "ㅤMK VPN BOT MANAGERㅤ" | figlet
 
 echo " "
 
